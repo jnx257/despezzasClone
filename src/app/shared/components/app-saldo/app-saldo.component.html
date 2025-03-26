@@ -1,0 +1,13 @@
+<div class="saldo">
+  <h2>
+    Saldo:
+    <span
+      [ngClass]="{
+        positivo: saldo > 0,
+        negativo: saldo < 0,
+        neutro: saldo === 0
+      }"
+      >{{ dinheiroEmConta | currency : "BRL" }}</span
+    >
+  </h2>
+</div>

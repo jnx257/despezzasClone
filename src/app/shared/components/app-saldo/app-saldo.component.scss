@@ -1,0 +1,25 @@
+.saldo {
+  text-align: center;
+  border: 3px solid black;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.saldo h2 {
+  margin: 0;
+}
+
+.positivo {
+  color: green;
+}
+
+.negativo {
+  color: red;
+}
+
+.neutro {
+  color: gray;
+}
