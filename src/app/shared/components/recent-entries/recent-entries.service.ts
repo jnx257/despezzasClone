@@ -1,8 +1,8 @@
 export interface Purchase {
   id: string;
-  date: string; 
+  date: string;
   description: string;
-  amount: number; 
+  amount: number;
   category: string;
   paymentMethod: string;
   status: 'paid' | 'pending' | 'scheduled';

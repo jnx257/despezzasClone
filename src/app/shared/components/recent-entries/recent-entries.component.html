@@ -1,7 +1,24 @@
 <div>
-    <table>
-        <tr>
-            @for()
-        </tr>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>Categoria</th>
+        <th>Método de Pagamento</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let purchase of purchases">
+        <td>{{ purchase.date }}</td>
+        <td>{{ purchase.description }}</td>
+        <td>{{ purchase.amount | currency : "BRL" }}</td>
+        <td>{{ purchase.category }}</td>
+        <td>{{ purchase.paymentMethod }}</td>
+        <td>{{ purchase.status }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
