@@ -13,11 +13,14 @@
   </head>
   <body>
     <app-top-bar></app-top-bar>
+    <app-account-values
+      [saldoConta]="1200"
+      [faturaCredito]="650"
+    ></app-account-values>
+    <app-recent-entries></app-recent-entries>
+
     <div class="content">
-      <div class="right-side">
-        <app-saldo></app-saldo>
-        <app-fatura></app-fatura>
-      </div>
+      <div class="right-side"></div>
     </div>
   </body>
 </html>

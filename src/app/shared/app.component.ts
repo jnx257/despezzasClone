@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
-import { AppSaldoComponent } from './components/app-saldo/app-saldo.component';
-import { FaturaComponent } from './components/fatura/fatura.component';
+import { AccountValuesComponent } from './components/account-values/account-values.component';
+import { RecentEntriesComponent } from './components/recent-entries/recent-entries.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TopBarComponent, AppSaldoComponent, FaturaComponent],
+  imports: [TopBarComponent, AccountValuesComponent, RecentEntriesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
